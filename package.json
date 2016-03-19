@@ -1,0 +1,33 @@
+{
+  "name": "systemjs-example",
+  "version": "1.0.0",
+  "description": "a demo using System.js and Babel to load es6 modules directly in browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve"
+  },
+  "author": "Treri",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-standalone": "^6.6.5",
+    "serve": "^1.4.0",
+    "systemjs": "^0.19.24",
+    "systemjs-plugin-css": "github:systemjs/plugin-css#1.2.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treri/systemjs-example.git"
+  },
+  "keywords": [
+    "systemjs",
+    "babel",
+    "es6",
+    "module"
+  ],
+  "bugs": {
+    "url": "https://github.com/Treri/systemjs-example/issues"
+  },
+  "homepage": "https://github.com/Treri/systemjs-example#readme"
+}
