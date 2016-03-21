@@ -1,7 +1,7 @@
 {
   "name": "systemjs-example",
   "version": "1.0.0",
-  "description": "a demo using System.js and Babel to load es6 modules directly in browser.",
+  "description": "a demo using System.js and Babel or TypeScript to load es6 modules directly in browser.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
