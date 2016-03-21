@@ -13,7 +13,8 @@
     "babel-standalone": "^6.6.5",
     "serve": "^1.4.0",
     "systemjs": "^0.19.24",
-    "systemjs-plugin-css": "github:systemjs/plugin-css#1.2.0"
+    "systemjs-plugin-css": "github:systemjs/plugin-css#1.2.0",
+    "typescript": "^1.8.9"
   },
   "dependencies": {},
   "repository": {
