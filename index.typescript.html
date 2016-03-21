@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>system demo</title>
+  <title>system demo(TypeScript)</title>
 </head>
 <body>
   <div id="content"></div>
@@ -15,7 +15,7 @@
       transpiler: 'typescript',
       // or traceurOptions or typescriptOptions
       typescriptOptions: {
-        jsx: 2
+        jsx: 2 // must use integer 2, not `react`. see issue https://github.com/Microsoft/TypeScript/issues/5918
       },
       map: {
         typescript: './node_modules/typescript/lib/typescript.js',
