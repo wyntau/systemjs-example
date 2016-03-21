@@ -11,11 +11,11 @@ npm install
 npm run serve
 ```
 
-1. intergrate System.js and Babel.
+1. integrate System.js and Babel.
 
     > open <http://localhost:3000/>
 
-2. intergrage System.js and TypeScript.
+2. integrate System.js and TypeScript.
 
     > open <http://localhost:3000/index.typescript.html>
 
