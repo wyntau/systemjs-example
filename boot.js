@@ -1,3 +1,3 @@
-import { run } from './app.js'
+import { run } from './app.jsx'
 
 run();

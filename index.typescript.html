@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>system demo</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="./node_modules/systemjs/dist/system-polyfills.js"></script>
+  <script src="./node_modules/systemjs/dist/system.src.js"></script>
+  <script>
+    System.config({
+      baseURL: './',
+      // or 'traceur' or 'typescript'
+      transpiler: 'typescript',
+      // or traceurOptions or typescriptOptions
+      typescriptOptions: {
+        jsx: 2
+      },
+      map: {
+        typescript: './node_modules/typescript/lib/typescript.js',
+        css: './node_modules/systemjs-plugin-css/css.js'
+      },
+      meta: {
+        '*.css': {
+          loader: 'css'
+        }
+      }
+    });
+
+    System.import('boot.js');
+  </script>
+</body>
+</html>
