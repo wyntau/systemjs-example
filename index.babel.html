@@ -6,25 +6,25 @@
 </head>
 <body>
   <div id="content"></div>
-  <script src="./node_modules/systemjs/dist/system-polyfills.js"></script>
-  <script src="./node_modules/systemjs/dist/system.src.js"></script>
+  <script src="./node_modules/systemjs/dist/system.js"></script>
   <script>
     System.config({
       baseURL: './',
-      // or 'traceur' or 'typescript'
-      transpiler: 'Babel',
-      // or traceurOptions or typescriptOptions
-      babelOptions: {
-        plugins: ["transform-es2015-modules-systemjs"],
-        presets: ['es2015', 'react']
-      },
+      transpiler: 'plugin-babel',
       map: {
-        Babel: './node_modules/babel-standalone/babel.js',
-        css: './node_modules/systemjs-plugin-css/css.js'
+        'plugin-babel': './node_modules/systemjs-plugin-babel/plugin-babel.js',
+        'systemjs-babel-build': './node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
+        'css': './node_modules/systemjs-plugin-css/css.js'
       },
       meta: {
         '*.css': {
           loader: 'css'
+        },
+        '*.js': {
+          react: true
+        },
+        '*.jsx': {
+          react: true
         }
       }
     });
