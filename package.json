@@ -10,7 +10,6 @@
   "author": "Treri",
   "license": "MIT",
   "devDependencies": {
-    "babel-standalone": "^6.24.0",
     "plugin-typescript": "^7.0.6",
     "serve": "^5.1.4",
     "systemjs": "^0.20.12",
