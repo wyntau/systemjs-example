@@ -1,8 +1,6 @@
 ## System.js example
 
-# BREAKED! NOT USE NOW
-
-a demo using System.js and Babel(or TypeScript) to load es6 modules directly in browser.
+a demo using System.js and Babel(or TypeScript) to load es6 modules(and jsx) directly in browser.
 
 ### Usage
 
@@ -15,11 +13,11 @@ npm run serve
 
 1. integrate System.js and Babel.
 
-    > open <http://localhost:3000/>
+    > open <http://localhost:5000/babel.html>
 
 2. integrate System.js and TypeScript.
 
-    > open <http://localhost:3000/index.typescript.html>
+    > open <http://localhost:5000/typescript.html>
 
 ### License
 MIT
