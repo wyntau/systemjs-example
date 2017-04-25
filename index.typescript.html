@@ -10,16 +10,32 @@
   <script>
     System.config({
       baseURL: './',
-      // or 'traceur' or 'typescript'
-      transpiler: 'typescript',
+      packages: {
+        "ts": {
+          "main": "lib/plugin.js"
+        },
+        "typescript": {
+          "main": "lib/typescript.js",
+          "meta": {
+            "lib/typescript.js": {
+              "exports": "ts"
+            }
+          }
+        },
+        ".": {
+          "defaultExtension": ""
+        }
+      },
+      map: {
+        "ts": "./node_modules/plugin-typescript",
+        "typescript": "./node_modules/typescript",
+        "css": './node_modules/systemjs-plugin-css/css.js'
+      },
+      transpiler: 'ts',
       // or traceurOptions or typescriptOptions
       typescriptOptions: {
         target: 1, // must use integer 1, not `es5`. see issue https://github.com/Microsoft/TypeScript/issues/7610 and https://github.com/Microsoft/TypeScript/issues/7592
         jsx: 2 // must use integer 2, not `react`. see issue https://github.com/Microsoft/TypeScript/issues/5918
-      },
-      map: {
-        typescript: './node_modules/typescript/lib/typescript.js',
-        css: './node_modules/systemjs-plugin-css/css.js'
       },
       meta: {
         '*.css': {
