@@ -5,5 +5,5 @@ export function test(){
 }
 
 export function run(){
-  document.getElementById('content').innerHTML = 'inserted from app.js'
+  document.getElementById('content').innerHTML = 'inserted from app.jsx'
 }
