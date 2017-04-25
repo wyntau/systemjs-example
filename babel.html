@@ -17,19 +17,12 @@
         'systemjs-babel-build': './node_modules/systemjs-plugin-babel/systemjs-babel-browser.js',
         'css': './node_modules/systemjs-plugin-css/css.js'
       },
+      babelOptions: {
+        react: true
+      },
       meta: {
         '*.css': {
           loader: 'css'
-        },
-        '*.js': {
-          babelOptions: {
-            react: true
-          }
-        },
-        '*.jsx': {
-          babelOptions: {
-            react: true
-          }
         }
       }
     });
